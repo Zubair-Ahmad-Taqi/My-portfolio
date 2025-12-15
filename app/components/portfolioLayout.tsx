@@ -2,7 +2,7 @@
 
 "use client";
 
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import Chatbot from "./chatbot";
 import Experience from "./experience";
 import { useState, useEffect, useRef } from "react";
@@ -26,9 +26,9 @@ const Container = styled.main`
   background: linear-gradient(135deg, #0b1216, #142024);
   border-radius: 28px;
   box-shadow:
-    0 8px 30px rgba(1, 53, 48, 0.6),
-    inset 0 0 80px rgba(1, 53, 48, 0.5);
-  color: #cde4e3;
+    0 8px 30px rgba(42, 11, 63, 0.6),
+    inset 0 0 80px rgba(42, 11, 63, 0.5);
+  color: #F2E9FF;
   font-family: 'Exo 2', sans-serif;
   user-select: none;
 
@@ -42,16 +42,16 @@ const Container = styled.main`
 `;
 
 const GlassCard = styled.section`
-  background: rgba(1, 53, 48, 0.15);
+  background: rgba(124, 58, 237, 0.12);
   border-radius: 24px;
   box-shadow:
-    0 8px 32px rgba(0, 107, 95, 0.3),
-    inset 0 0 60px rgba(1, 53, 48, 0.8);
+    0 8px 32px rgba(124, 58, 237, 0.18),
+    inset 0 0 60px rgba(42, 11, 63, 0.8);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1.5px solid rgba(0, 107, 95, 0.65);
+  border: 1.5px solid rgba(124, 58, 237, 0.28);
   padding: 2rem 2.5rem;
-  color: #cde4e3;
+  color: #F2E9FF;
   overflow: hidden;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 
@@ -82,7 +82,7 @@ const InfoContainer = styled.div`
 
 const Name = styled.h2`
   font-size: 2rem;
-  color: #00c8b8;
+  color: #7C3AED;
   margin: 0;
 
   @media (max-width: 480px) {
@@ -102,7 +102,7 @@ const Role = styled.p`
 
 const Location = styled.p`
   font-size: 1rem;
-  color: #a0f0e0;
+  color: #F2E9FF;
   margin: 0;
 
   @media (max-width: 480px) {
@@ -112,7 +112,7 @@ const Location = styled.p`
 
 const Education = styled.p`
   font-size: 0.95rem;
-  color: #a0f0e0;
+  color: #CDB6FF;
   margin: 0;
 
   @media (max-width: 480px) {
@@ -142,11 +142,11 @@ const LinksGlassCard = styled(GlassCard)`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: rgba(1, 53, 48, 0.25);
+  background: rgba(124, 58, 237, 0.14);
   border-radius: 18px;
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  border: 1.5px solid rgba(0, 107, 95, 0.65);
+  border: 1.5px solid rgba(124, 58, 237, 0.28);
 
   @media (max-width: 480px) {
     gap: 0.8rem;
@@ -154,24 +154,24 @@ const LinksGlassCard = styled(GlassCard)`
   }
 `;
 
-const LinkButton = styled.a<{ platform?: string }>`
+const LinkButton = styled.a<{ $platform?: string }>`
   display: flex;
   align-items: center;
   justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: #007663;
-  color: #cde4e3;
+  background: #7C3AED;
+  color: #ffffff;
   font-size: 1.5rem;
   text-decoration: none;
   transition: all 0.25s ease;
-  box-shadow: 0 0 8px #007663;
+  box-shadow: 0 0 8px #A78BFA;
 
   &:hover {
     transform: scale(1.25);
     ${(props) => {
-      switch (props.platform) {
+      switch (props.$platform) {
         case "email":
           return `
             background: #f44336;
@@ -192,15 +192,15 @@ const LinkButton = styled.a<{ platform?: string }>`
           `;
         case "upwork":
           return `
-            background: #6fda44;
-            color: #111;
-            box-shadow: 0 0 16px #6fda44, 0 0 32px #6fda44;
+            background: #7C3AED;
+            color: #fff;
+            box-shadow: 0 0 16px #7C3AED, 0 0 32px #7C3AED;
           `;
         default:
           return `
-            background: #00c8b8;
-            color: #111;
-            box-shadow: 0 0 16px #00c8b8, 0 0 32px #00c8b8;
+            background: #7C3AED;
+            color: #fff;
+            box-shadow: 0 0 16px #7C3AED, 0 0 32px #7C3AED;
           `;
       }
     }}
@@ -245,9 +245,9 @@ const PageSelector = styled.div`
 
 const Button = styled.button<{ $active?: boolean }>`
   font-family: 'Exo 2', sans-serif;
-  background: transparent;
-  border: 2px solid ${({ $active }) => ($active ? "#00c8b8" : "#007663")};
-  color: ${({ $active }) => ($active ? "#00c8b8" : "#007663")};
+  background: ${({ $active }) => ($active ? "rgba(167, 139, 250, 0.12)" : "rgba(167, 139, 250, 0.08)")};
+  border: 2px solid ${({ $active }) => ($active ? "#7C3AED" : "#A78BFA")};
+  color: ${({ $active }) => ($active ? "#DDD3FF" : "#CDB6FF")};
   padding: 0.2rem 0.8rem;
   font-size: 1.1rem;
   border-radius: 16px;
@@ -256,9 +256,10 @@ const Button = styled.button<{ $active?: boolean }>`
   user-select: none;
 
   &:hover {
-    background: #007663;
-    color: #cde4e3;
-    border-color: #00c8b8;
+    background: rgba(124, 58, 237, 0.18);
+    color: #F2E9FF;
+    border-color: #7C3AED;
+    box-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
   }
 
   @media (max-width: 480px) {
@@ -273,7 +274,7 @@ const Section = styled.section<{ $offsetY: number }>`
   scroll-behavior: smooth;
   padding: 2rem 1rem;
   border-radius: 20px;
-  color: #b6d7d1;
+  color: #F2E9FF;
   transform: translateY(${(props) => props.$offsetY * 0.3}px);
   transition: transform 0.2s ease;
 
@@ -282,8 +283,8 @@ const Section = styled.section<{ $offsetY: number }>`
     font-weight: 700;
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: #00c8b8;
-    text-shadow: 0 0 12px #007663;
+    color: #A78BFA;
+    text-shadow: 0 0 12px #A78BFA;
 
     @media (max-width: 480px) {
       font-size: 2rem;
@@ -296,7 +297,7 @@ const ScrollArea = styled.div`
   overflow-y: auto;
 
   scrollbar-width: thin;
-  scrollbar-color: #007663 transparent;
+  scrollbar-color: #A78BFA transparent;
 
   &::-webkit-scrollbar {
     width: 8px;
@@ -308,7 +309,7 @@ const ScrollArea = styled.div`
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #007663;
+    background-color: #7C3AED;
     border-radius: 10px;
     border: 2px solid transparent;
   }
@@ -327,12 +328,13 @@ export default function PortfolioLayout() {
   };
 
   useEffect(() => {
-    if (scrollRef.current) {
-      scrollRef.current.addEventListener("scroll", onScroll);
+    const el = scrollRef.current;
+    if (el) {
+      el.addEventListener("scroll", onScroll);
     }
     return () => {
-      if (scrollRef.current) {
-        scrollRef.current.removeEventListener("scroll", onScroll);
+      if (el) {
+        el.removeEventListener("scroll", onScroll);
       }
     };
   }, []);
@@ -383,7 +385,7 @@ export default function PortfolioLayout() {
             <>
               <Button onClick={() => setShowChatbot(true)}>Talk to my AI</Button>
               <InfoContainer>
-                <Name>Muhammad Tahoor Bin Rauf</Name>
+                <Name>Zubair Ahmed</Name>
                 <Role>AI Engineer</Role>
                 <Location>Islamabad, Pakistan</Location>
                 <Education>BSc Artificial Intelligence</Education>
@@ -422,18 +424,18 @@ export default function PortfolioLayout() {
         </RightCard>
 
         <LinksGlassCard>
-          <LinkButton platform="email" href="mailto:mtahoorbinrauf@gmail.com" target="_blank">
+          <LinkButton $platform="email" href="mailto:zubairahmedtaqi78@gmail.com" target="_blank">
             <FiMail />
           </LinkButton>
-          <LinkButton platform="linkedin" href="https://www.linkedin.com/in/m-tahoor-bin-rauf" target="_blank">
+          <LinkButton $platform="linkedin" href="https://www.linkedin.com/in/zubair-ahmed" target="_blank">
             <FaLinkedinIn />
           </LinkButton>
-          <LinkButton platform="github" href="https://github.com/tahoorbr" target="_blank">
+          <LinkButton $platform="github" href="https://github.com/Zubair-Ahmed-Taqi" target="_blank">
             <FaGithub />
           </LinkButton>
           <LinkButton
-            platform="upwork"
-            href="https://www.upwork.com/freelancers/~01f6079a84857bdd7f?"
+            $platform="upwork"
+            href="https://www.upwork.com"
             target="_blank"
           >
             <SiUpwork />

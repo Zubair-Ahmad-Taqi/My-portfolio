@@ -9,12 +9,12 @@ const exo2 = Exo_2({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammad Tahoor Bin Rauf | Portfolio",
+  title: "Zubair Ahmed | Portfolio",
   description: "Personal portfolio showcasing projects, skills, and AI experiments.",
-  authors: [{ name: "Muhammad Tahoor Bin Rauf" }],
+  authors: [{ name: "Zubair Ahmed" }],
   keywords: [
     "Portfolio",
-    "Muhammad Tahoor Bin Rauf",
+    "Zubair Ahmed",
     "AI",
     "Next.js",
     "Full Stack",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Muhammad Tahoor Bin Rauf | Portfolio",
+    title: "Zubair Ahmed | Portfolio",
     description: "Personal portfolio showcasing projects, skills, and AI experiments.",
     url: "https://portfolio-sigma-dun-zixzbign8y.vercel.app",
     siteName: "Portfolio",

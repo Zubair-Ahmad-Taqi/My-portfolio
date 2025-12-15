@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+//
 
 "use client";
 
@@ -10,7 +10,6 @@ import certsData from "../data/certs.json";
 interface Education {
   institution: string;
   degree: string;
-  cgpa?: string;
   duration: string;
 }
 
@@ -38,15 +37,15 @@ const Container = styled.div`
 const SectionTitle = styled.h2`
   font-family: 'Exo 2', sans-serif;
   font-size: 2rem;
-  color: #00c8b8;
+  color: #7C3AED;
   margin-bottom: 1rem;
 `;
 
 const Card = styled.div`
-  background: rgba(1, 53, 48, 0.15);
+  background: rgba(124, 58, 237, 0.12);
   border-radius: 15px;
   padding: 1rem 1.5rem;
-  border: 1px solid rgba(0, 107, 95, 0.5);
+  border: 1px solid rgba(124, 58, 237, 0.28);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
 `;
@@ -55,13 +54,13 @@ const ItemTitle = styled.h3`
   font-size: 1.2rem;
   font-weight: bold;
   margin: 0.3rem 0;
-  color: #00c8b8;
+  color: #7C3AED;
   font-family: 'Exo 2', sans-serif;
 `;
 
 const ItemSubtitle = styled.p`
   margin: 0.2rem 0;
-  color: #cde4e3;
+  color: #E9DBFF;
   font-size: 0.95rem;
   font-family: 'Exo 2', sans-serif;
 `;
@@ -76,7 +75,7 @@ export default function Certs() {
         {data.education.map((edu, index) => (
           <Card key={index}>
             <ItemTitle>{edu.institution}</ItemTitle>
-            <ItemSubtitle>{edu.degree} {edu.cgpa && `— CGPA: ${edu.cgpa}`}</ItemSubtitle>
+            <ItemSubtitle>{edu.degree}</ItemSubtitle>
             <ItemSubtitle>{edu.duration}</ItemSubtitle>
           </Card>
         ))}
@@ -88,15 +87,6 @@ export default function Certs() {
           <Card key={index}>
             <ItemTitle>{cert.title}</ItemTitle>
             <ItemSubtitle>{cert.issuer}{cert.year && ` — ${cert.year}`}</ItemSubtitle>
-          </Card>
-        ))}
-      </div>
-
-      <div>
-        <SectionTitle>Awards</SectionTitle>
-        {data.awards.map((award, index) => (
-          <Card key={index}>
-            <ItemTitle>{award}</ItemTitle>
           </Card>
         ))}
       </div>

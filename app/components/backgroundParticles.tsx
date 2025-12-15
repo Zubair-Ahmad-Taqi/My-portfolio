@@ -18,7 +18,7 @@ export default function BackgroundParticles() {
       init={particlesInit}
       options={{
         fullScreen: { enable: true, zIndex: 0 },
-        background: { color: "#0b1216" },
+        background: { color: "#0E0A1A" },
         fpsLimit: 120,
         interactivity: {
           events: {
@@ -36,15 +36,15 @@ export default function BackgroundParticles() {
           },
         },
         particles: {
-          color: { value: "#00c8b8" },
+          color: { value: "#A78BFA" },
           links: {
-            color: "#00f0d0",
+            color: "#7C3AED",
             distance: 150,
             enable: true,
-            opacity: 0.6,
+            opacity: 0.5,
             width: 1.5,
             blink: true,
-            triangles: { enable: true, color: "#007663", opacity: 0.1 },
+            triangles: { enable: true, color: "#DDD3FF", opacity: 0.08 },
           },
           collisions: { enable: false },
           move: {
@@ -57,11 +57,11 @@ export default function BackgroundParticles() {
           },
           number: { density: { enable: true, area: 800 }, value: 80 },
           opacity: {
-            value: { min: 0.3, max: 0.9 },
-            animation: { enable: true, speed: 1.5, minimumValue: 0.3, sync: false },
+            value: { min: 0.25, max: 0.75 },
+            animation: { enable: true, speed: 1.2, minimumValue: 0.25, sync: false },
           },
           shape: { type: "circle" },
-          size: { value: { min: 2, max: 6 }, animation: { enable: true, speed: 3, minimumValue: 2, sync: false } },
+          size: { value: { min: 2, max: 5 }, animation: { enable: true, speed: 2.5, minimumValue: 2, sync: false } },
           font: { value: "'Exo 2', sans-serif" }
         },
         detectRetina: true,

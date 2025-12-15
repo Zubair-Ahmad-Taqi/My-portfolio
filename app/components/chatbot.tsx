@@ -17,10 +17,10 @@ const ChatBox = styled.div`
   flex-direction: column;
   height: 100%;
   font-family: 'Exo 2', sans-serif;
-  color: #a0f0e0;
-  background: rgba(0, 107, 95, 0.18);
+  color: #515477ff;
+  background: rgba(124, 58, 237, 0.08);
   border-radius: 20px;
-  box-shadow: 0 0 12px #00c8b8;
+  box-shadow: 0 0 12px #7C3AED;
   backdrop-filter: blur(15px);
   padding: 0;
   overflow: hidden;
@@ -31,7 +31,7 @@ const ChatHeader = styled.div`
   text-align: center;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #00c8b8;
+  color: #7C3AED;
   border-bottom: none;
   font-family: 'Exo 2', sans-serif;
 `;
@@ -41,13 +41,13 @@ const Messages = styled.div`
   overflow-y: auto;
   padding: 1rem;
   scrollbar-width: thin;
-  scrollbar-color: #00c8b8 transparent;
+  scrollbar-color: #7C3AED transparent;
 
   &::-webkit-scrollbar {
     width: 6px;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: #00c8b8;
+    background-color: #7C3AED;
     border-radius: 10px;
   }
 
@@ -61,10 +61,10 @@ const MessageBubble = styled.div<{ role: string }>`
   align-self: ${({ role }) =>
     role === "user" ? "flex-end" : "flex-start"};
   background-color: ${({ role }) =>
-    role === "user" ? "rgba(0, 200, 184, 0.2)" : "rgba(255, 255, 255, 0.05)"};
+    role === "user" ? "rgba(124, 58, 237, 0.12)" : "rgba(255, 255, 255, 0.05)"};
   border: 1px solid
     ${({ role }) =>
-      role === "user" ? "#00c8b8" : "rgba(0, 200, 184, 0.5)"};
+      role === "user" ? "#7C3AED" : "rgba(124, 58, 237, 0.5)"};
   border-radius: 14px;
   padding: 0.6rem 1rem;
   font-size: 1rem;
@@ -83,7 +83,7 @@ const Role = styled.div`
 
 const Content = styled.div`
   highlight {
-    color: #00fff2;
+    color: #CDB6FF;
     font-weight: bold;
     text-decoration: underline;
   }
@@ -99,25 +99,25 @@ const Form = styled.form`
 const Input = styled.input`
   flex-grow: 1;
   min-width: 0;
-  border: 2px solid #00c8b8;
+  border: 2px solid #7C3AED;
   border-radius: 14px;
-  background: rgba(0, 107, 95, 0.35);
-  color: #cde4e3;
+  background: rgba(124, 58, 237, 0.12);
+  color: #CDB6FF;
   padding: 0.6rem 1rem;
   font-family: 'Exo 2', sans-serif;
   font-size: 1.1rem;
   outline: none;
 
   &:focus {
-    border-color: #00fff2;
-    box-shadow: 0 0 10px #00fff2;
-    background: rgba(0, 107, 95, 0.6);
+    border-color: #CDB6FF;
+    box-shadow: 0 0 10px #CDB6FF;
+    background: rgba(124, 58, 237, 0.18);
   }
 `;
 
 const Button = styled.button`
   padding: 0 1.2rem;
-  background: #00c8b8;
+  background: #7C3AED;
   border: none;
   border-radius: 14px;
   color: #0b1216;
@@ -127,12 +127,12 @@ const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: #00fff2;
-    box-shadow: 0 0 12px #00fff2;
+    background-color: #CDB6FF;
+    box-shadow: 0 0 12px #CDB6FF;
   }
 
   &:disabled {
-    background-color: #007663;
+    background-color: #4A2366;
     cursor: not-allowed;
   }
 `;
@@ -147,7 +147,7 @@ const TypingDots = styled.div`
 const Dot = styled.div`
   width: 6px;
   height: 6px;
-  background-color: #00c8b8;
+  background-color: #7C3AED;
   border-radius: 50%;
   animation: blink 1.4s infinite both;
 
@@ -178,7 +178,6 @@ const highlightKeywords = (text: string) => {
     ...skillsData.flatMap((cat: any) => cat.skills.map((s: any) => s.name)),
     ...projectsData.map((p: any) => p.title),
     ...certsData.certifications.map((c: any) => c.title),
-    ...certsData.awards,
     ...certsData.education.map((e: any) => e.degree),
   ];
   let formatted = text;

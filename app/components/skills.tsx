@@ -47,12 +47,12 @@ const ChartWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(1, 53, 48, 0.15);
+  background: rgba(167, 139, 250, 0.10);
   border-radius: 20px;
   padding: 1.5rem;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(0, 107, 95, 0.5);
+  border: 1px solid rgba(167, 139, 250, 0.22);
   width: 100%;
   box-sizing: border-box;
 
@@ -76,7 +76,7 @@ const ChartContainer = styled.div`
 const CategoryTitle = styled.h3`
   font-family: 'Exo 2', sans-serif;
   font-size: 1.8rem;
-  color: #00c8b8;
+  color: #A78BFA;
   text-align: center;
   margin-bottom: 1rem;
 `;
@@ -117,7 +117,7 @@ export default function Skills() {
         const angle = Math.atan2(point.y - centerY, point.x - centerX);
 
         ctx.save();
-        ctx.fillStyle = '#00c8b8';
+        ctx.fillStyle = '#DDD3FF';
         ctx.font = 'bold 11px Arial';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
@@ -141,13 +141,13 @@ export default function Skills() {
             {
               label: category.category,
               data: category.skills.map((s: Skill) => s.level),
-              backgroundColor: "rgba(0, 200, 184, 0.3)",
-              borderColor: "#00c8b8",
+              backgroundColor: "rgba(167, 139, 250, 0.25)",
+              borderColor: "#DDD3FF",
               borderWidth: 2,
-              pointBackgroundColor: "#00c8b8",
+              pointBackgroundColor: "#A78BFA",
               pointHoverRadius: 5,
               pointHoverBackgroundColor: "#fff",
-              pointHoverBorderColor: "#00c8b8",
+              pointHoverBorderColor: "#DDD3FF",
             },
           ],
         };
@@ -160,9 +160,9 @@ export default function Skills() {
               min: 0,
               max: 100,
               ticks: { display: false },
-              grid: { color: "rgba(0, 200, 184, 0.15)" },
-              angleLines: { color: "rgba(0, 200, 184, 0.25)" },
-              pointLabels: { color: "#cde4e3", font: { size: 11 } },
+              grid: { color: "rgba(167, 139, 250, 0.12)" },
+              angleLines: { color: "rgba(167, 139, 250, 0.18)" },
+              pointLabels: { color: "#DDD3FF", font: { size: 11 } },
             },
           },
           plugins: {

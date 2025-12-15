@@ -1,4 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
+//
 
 "use client";
 
@@ -18,14 +18,14 @@ const Container = styled.div`
 
 const Title = styled.h2`
   font-size: 1.5rem;
-  color: #cde4e3;
+  color: #DDD3FF;
   font-weight: normal;
   font-family: 'Exo 2', sans-serif;
 `;
 
 const Paragraph = styled.p`
   font-size: 1rem;
-  color: #e0f7f4;
+  color: #F2E9FF;
   line-height: 1.6;
   font-family: 'Exo 2', sans-serif;
 `;
@@ -36,11 +36,12 @@ const ContactLinks = styled.div`
   gap: 1.5rem;
   margin-top: 1rem;
   a {
-    color: #00c8b8;
+    color: #A78BFA;
     text-decoration: none;
     font-weight: bold;
     font-family: 'Exo 2', sans-serif;
     &:hover {
+      color: #DDD3FF;
       text-decoration: underline;
     }
   }
