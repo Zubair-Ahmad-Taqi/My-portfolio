@@ -6,7 +6,7 @@
     "location": "Bagh",
     "startDate": "2025-07",
     "endDate": "Present",
-    "description": "Contributing to machine learning model development, data analysis, and real-world healthcare technology solutions."
+    "description": "Designing and developing real-time AI voice agents using LiveKit and ElevenLabs for healthcare front-desk automation. Implemented appointment booking, cancellation, and rescheduling workflows through conversational AI. Integrated n8n MCP servers to enable tool calling, backend automation, EHR-adjacent workflows, and API orchestration. Built agentic AI pipelines combining speech-to-text, LLM reasoning, tool execution, and text-to-speech. Worked on scalable, HIPAA-conscious AI solutions tailored for US healthcare practices."
   },
   {
     "id": 2,
@@ -33,15 +33,15 @@
     "location": "Islamabad",
     "startDate": "2023-07",
     "endDate": "2023-09",
-    "description": "Gained hands-on experience in machine learning and research in the Department of Creative Technologies."
+    "description": "Completed an enriching internship in the Department of Creative Technologies at Air University, honing Machine Learning skills from July to September 2023."
   },
   {
-    "id": 5,
+    "id": 3,
     "role": "Python Developer Intern",
     "company": "128 Technologies",
     "location": "Islamabad",
     "startDate": "2023-07",
     "endDate": "2023-08",
-    "description": "Gained hands-on experience in coding, problem-solving, and project management. Built a Doctor's Appointment Scheduler and Management System."
+    "description": "Created a management system for hospitals to keep track of their doctors' schedules and to provide appointments to patients relative to their emergencies. Gained hands-on experience in coding with Python, problem-solving, and project management."
   }
 ]

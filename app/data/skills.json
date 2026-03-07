@@ -1,5 +1,25 @@
 [
   {
+    "category": "Voice AI & Agentic Systems",
+    "skills": [
+      { "name": "LiveKit Voice Agents", "level": 95 },
+      { "name": "ElevenLabs TTS", "level": 90 },
+      { "name": "Conversational AI", "level": 95 },
+      { "name": "Agentic Workflows", "level": 90 },
+      { "name": "Tool Calling", "level": 90 }
+    ]
+  },
+  {
+    "category": "Automation & Integration",
+    "skills": [
+      { "name": "n8n", "level": 85 },
+      { "name": "MCP Servers", "level": 90 },
+      { "name": "API Integrations", "level": 90 },
+      { "name": "Workflow Orchestration", "level": 85 },
+      { "name": "Backend Automation", "level": 85 }
+    ]
+  },
+  {
     "category": "Core Machine Learning",
     "skills": [
       { "name": "Machine Learning", "level": 99 },
