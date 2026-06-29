@@ -1,10 +1,10 @@
 ![Portfolio Banner](./public/images/banner.png)
-# Muhammad Tahoor Bin Rauf – AI Engineer Portfolio
+# Zubair Ahmed – AI Engineer Portfolio
 
 Welcome to my personal **AI-driven portfolio** built with **Next.js**, **React**, and **TypeScript**.
 This website highlights my journey as an AI Engineer, showcasing my **experience**, **projects**, **skills**, **certifications**, and a unique **interactive chatbot** that demonstrates my work with AI-powered user experiences.
 
-🔗 **Live Demo:** [https://tahoor.vercel.app/](https://tahoor.vercel.app/)
+🔗 **Live Demo:** [https://zubair-ahmed.vercel.app/](https://zubair-ahmed.vercel.app/)
 
 ---
 
@@ -128,7 +128,7 @@ The portfolio is deployed using **Vercel**, enabling instant previews and produc
 * Any commit pushed to the `main` branch triggers an **automatic deployment**.
 * Vercel provides analytics, domain management, and serverless API support for the chatbot.
 
-🔗 Live Deployment: [https://tahoor.vercel.app/](https://tahoor.vercel.app/)
+🔗 Live Deployment: [https://zubair-ahmed.vercel.app/](https://zubair-ahmed.vercel.app/)
 
 ## 📌 How to Contribute / Customize
 
