@@ -1,50 +1,50 @@
 [
   {
     "id": 1,
-    "title": "Neuro-Flex (FYP)",
-    "description": "An EMG-based neural control system designed to translate muscle signals into intuitive hand movement predictions for amputees. Utilized signal processing, LSTM.",
-    "tech": "Deep Learning, EMG Signal Processing, LSTM, Python"
+    "title": "AI Voice Agent for Healthcare Front Desk",
+    "description": "Built LiveKit-based real-time voice agents integrated with ElevenLabs for natural, human-like conversations. Used n8n MCP servers to connect voice agents with scheduling systems, APIs, and backend services. Automated appointment booking, rescheduling, and cancellation for healthcare practices.",
+    "tech": "LiveKit, ElevenLabs, n8n MCP Servers, Python, Conversational AI"
   },
   {
     "id": 2,
-    "title": "UIgenius",
-    "description": "An intelligent web development tool that automates multi-page website creation using Generative AI. Integrated Google Gemini via Flask backend to produce fully functional HTML/CSS/JS UIs with live preview.",
-    "tech": "Flask, Generative AI, Google Gemini, HTML/CSS/JS, Python"
+    "title": "Neuro-Flex (FYP)",
+    "description": "An innovative system that leverages EMG signals to enable intuitive hand movement control for amputees. By analyzing muscle activity, the system translates neural impulses into precise motor functions, offering enhanced mobility and independence.",
+    "tech": "Deep Learning, EMG Signal Processing, LSTM, Python"
   },
   {
-  "id": 3,
-  "title": "Avatar-Based Voice Agent",
-  "description": "A real-time interactive voice agent featuring a personalized avatar, built using Python, LiveKit, and Next.js. The system handles audio streaming, speech recognition, LLM-based response generation, and lip-synced avatar rendering in the browser. Supports conversational flows, intent handling, and API integrations for dynamic tasks.",
-  "tech": "Python, LiveKit, Next.js, WebRTC, LLMs, Real-Time Audio Processing"
+    "id": 3,
+    "title": "UIgenius",
+    "description": "An intelligent web development tool that automates website creation by integrating Google Gemini AI with a Flask backend, reducing website development time from hours to minutes while ensuring professional, contextually relevant results.",
+    "tech": "Flask, Generative AI, Google Gemini, HTML/CSS/JS, Python"
   },
   {
     "id": 4,
     "title": "AI Resume Screening Bot",
-    "description": "A Streamlit-powered application that evaluates resumes against job descriptions using NLP, cosine similarity, and intelligent scoring. Provides skill gap analysis, match percentage, and automated recruiter insights.",
+    "description": "Developed an AI-powered Resume Screening Bot using Python, Streamlit, and machine learning algorithms to automate candidate evaluation and provide intelligent feedback on resume-job description matching, similarity analysis, skill gap identification, and automated scoring features with modern UI/UX design.",
     "tech": "NLP, Streamlit, Python, TF-IDF, SentenceTransformers, Cosine Similarity"
   },
   {
     "id": 5,
     "title": "Road Lanes Detection",
-    "description": "A computer vision project for detecting road lanes from dashcam footage using OpenCV techniques including edge detection, thresholding, and Hough Transform.",
+    "description": "Computer Vision based semester project in which we trained a model to detect road lanes through videos of the dashcam.",
     "tech": "OpenCV, Computer Vision, Python"
   },
   {
     "id": 6,
     "title": "Automatic Rain Sensing Windshield Wiper",
-    "description": "A hardware-based project using a rain sensor and servo motor to automatically activate wipers based on detected moisture levels.",
+    "description": "A hardware based semester project using components such as Arduino, servo motor and rain sensors to make a miniature car with an automatic rain sensing wiper on its windshield.",
     "tech": "Arduino, Sensors, Embedded Systems"
   },
   {
     "id": 7,
     "title": "AI-Based Disease Prediction",
-    "description": "A machine learning model trained to predict diseases from symptoms using supervised learning algorithms and structured medical datasets.",
+    "description": "A disease prediction model using machine learning concepts to train our model.",
     "tech": "Machine Learning, scikit-learn, Python"
   },
   {
     "id": 8,
     "title": "Checkers Game with Min-Max AI",
-    "description": "A Python-based checkers game that includes an AI opponent built using the Min-Max algorithm, demonstrating game tree search and basic decision-making AI.",
+    "description": "Developed a checkers game using Python programming language along with basic algorithms (Min-Max). The game was made to be played between a human and an AI agent.",
     "tech": "Python, Min-Max Algorithm, Game AI"
   }
 ]
